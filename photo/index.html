@@ -6,17 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>相册 | 西北偏北的博客</title>
+  <title>西北偏北的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Photos 	待续   	图片正在加载中…     (function() {     var loadScript &#x3D; function(path) {       var $script &#x3D; document.createElement(&#39;script&#39;)       document.getElementsByTagName(&#39;body&#39;)[0].appendChild($scrip">
-<meta property="og:type" content="website">
-<meta property="og:title" content="相册">
-<meta property="og:url" content="http://yoursite.com/photos/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="西北偏北的博客">
+<meta property="og:url" content="http://yoursite.com/photo/index.html">
 <meta property="og:site_name" content="西北偏北的博客">
-<meta property="og:description" content="Photos 	待续   	图片正在加载中…     (function() {     var loadScript &#x3D; function(path) {       var $script &#x3D; document.createElement(&#39;script&#39;)       document.getElementsByTagName(&#39;body&#39;)[0].appendChild($scrip">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-03T11:08:03.467Z">
-<meta property="article:modified_time" content="2020-03-03T11:08:03.467Z">
+<meta property="article:published_time" content="2020-03-05T11:35:08.130Z">
+<meta property="article:modified_time" content="2020-03-05T11:35:08.126Z">
 <meta property="article:author" content="pyun">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="js">
@@ -92,7 +90,7 @@ var _hmt = _hmt || [];
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/photos">相册</a></li>
+				<li><a href="/photo">相册</a></li>
 	        
 				<li><a href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a></li>
 	        
@@ -198,7 +196,7 @@ var _hmt = _hmt || [];
 				
 					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 20%"><a href="/photos">相册</a></li>
+					<li style="width: 20%"><a href="/photo">相册</a></li>
 		        
 					<li style="width: 20%"><a href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/">技术栈</a></li>
 		        
@@ -219,42 +217,21 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-photos" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      相册
-    </h1>
-  
-
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="./ins.css">
-<div class="photos-btn-wrap">
-	<a class="photos-btn active" href="javascript:void(0)">Photos</a>
-	<a class="photos-btn" href="#">待续</a>
+        <!--
+--- Created by water
+--- 2017/01/19
+-->
+<!--相册布局-->
+<div class="instagram">
+    <section class="archives album">
+        <ul class="img-box-ul"></ul>
+    </section>
 </div>
-<div class="instagram itemscope">
-	<a href="https://www.instagram.com/lawlitewang20/" target="_blank" class="open-ins">图片正在加载中…</a>
-</div>
-<script>
-  (function() {
-    var loadScript = function(path) {
-      var $script = document.createElement('script')
-      document.getElementsByTagName('body')[0].appendChild($script)
-      $script.setAttribute('src', path)
-    }
-    setTimeout(function() {
-      loadScript('./ins.js')
-    }, 0)
-  })()
-</script>
 
       
 
@@ -344,7 +321,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/photos/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/photo/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -387,6 +364,41 @@ var _hmt = _hmt || [];
 </aside>
 
 
+
+
+    
+      <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'H0zFwFSQRMcj1WmsaKEUwKIJ-gzGzoHsz',
+      app_key: '4D2UONcYm0gGDmifpp3efTtf',
+      placeholder: '看这里，这是评论留言框！！！qwq 记得填上面的昵称和邮箱！！！'
+    });
+</script>
+
+    
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
 
