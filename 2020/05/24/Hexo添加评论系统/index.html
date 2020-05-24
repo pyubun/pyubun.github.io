@@ -6,36 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 技术栈 | 西北偏北的博客</title>
+  <title>Hexo添加评论系统 | 西北偏北的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="联系me &gt;&gt;qq:2238747128-邮箱：pyubun@qq.com">
-<meta property="og:type" content="website">
-<meta property="og:title" content="西北偏北的博客">
-<meta property="og:url" content="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/index.html">
+  <meta name="description" content="前言现在好用的评论系统没多少个，本来之前来必力挺好用的，但最近好像被墙了，而Github又不是每个人都有账号，看到valine评价挺好的（确实不错），最后就决定用这个了。无图警告">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo添加评论系统">
+<meta property="og:url" content="http://yoursite.com/2020/05/24/Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="西北偏北的博客">
-<meta property="og:description" content="联系me &gt;&gt;qq:2238747128-邮箱：pyubun@qq.com">
+<meta property="og:description" content="前言现在好用的评论系统没多少个，本来之前来必力挺好用的，但最近好像被墙了，而Github又不是每个人都有账号，看到valine评价挺好的（确实不错），最后就决定用这个了。无图警告">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-24T12:42:10.000Z">
+<meta property="article:modified_time" content="2020-05-24T14:00:04.389Z">
 <meta property="article:author" content="pyun">
-<meta property="article:tag" content="前端">
-<meta property="article:tag" content="js">
-<meta property="article:tag" content="jquery">
-<meta property="article:tag" content="javascript">
-<meta property="article:tag" content="html5">
-<meta property="article:tag" content="开发者">
-<meta property="article:tag" content="程序猿">
-<meta property="article:tag" content="极客">
-<meta property="article:tag" content="编程">
-<meta property="article:tag" content="代码">
-<meta property="article:tag" content="开源">
-<meta property="article:tag" content="IT网站">
-<meta property="article:tag" content="Developer">
-<meta property="article:tag" content="Programmer">
-<meta property="article:tag" content="Coder">
-<meta property="article:tag" content="Geek">
-<meta property="article:tag" content="html">
-<meta property="article:tag" content="css">
-<meta property="article:tag" content="css3">
-<meta property="article:tag" content="用户体验">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="西北偏北的博客" type="application/atom+xml">
@@ -293,132 +276,95 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Hexo添加评论系统" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo添加评论系统
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" class="archive-article-date">
+  	<time datetime="2020-05-24T12:42:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>现在好用的评论系统没多少个，本来之前来必力挺好用的，但最近好像被墙了，而Github又不是每个人都有账号，看到valine评价挺好的（确实不错），最后就决定用这个了。<del>无图警告</del></p>
+<a id="more"></a> 
+<h2 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h2><p><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></p>
+<p>基于<a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>的快速、简洁且高效的无后端评论系统</p>
+<h3 id="LeanCloud"><a href="#LeanCloud" class="headerlink" title="LeanCloud"></a>LeanCloud</h3><p>valne是基于leancloud的</p>
+<p>首先要先去<a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>官网注册账号</p>
+<p>然后创建应用（名字随便取）</p>
+<p>进入设置</p>
+<p>点击应用key，复制App ID和App Key</p>
+<p>再选择安全中心，把服务开关里的数据储存开启，把博客的地址填到 Web 安全域名里</p>
+<p>评论的信息都会储存在：储存→结构化数据→Comment里，用户信息在_User里</p>
+<p>leancloud到这基本就配置完了</p>
+<h3 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h3><p>其实配置模板别人已经写好了，复制粘贴就ok了</p>
+<h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#6、Valine https://valine.js.org</span><br><span class="line">valine: </span><br><span class="line"> appid:  #Leancloud应用的appId</span><br><span class="line"> appkey:  #Leancloud应用的appKey</span><br><span class="line"> verify: false #验证码</span><br><span class="line"> notify: false #评论回复提醒</span><br><span class="line"> avatar: mm #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide</span><br><span class="line"> placeholder: Just go go #评论框占位符</span><br></pre></td></tr></table></figure>
+
+<p>评论的头像配置<a href="https://valine.js.org/avatar.html" target="_blank" rel="noopener">https://valine.js.org/avatar.html</a></p>
+<h4 id="layout-partial-artce-ejs"><a href="#layout-partial-artce-ejs" class="headerlink" title="layout/_partial/artce.ejs"></a>layout/_partial/artce.ejs</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.valine &amp;&amp; theme.valine.appid &amp;&amp; theme.valine.appkey)&#123; %&gt;</span><br><span class="line">  &lt;section id=<span class="string">"comments"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"comments"</span>&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      .comments&#123;margin:30px;padding:10px;background:#fff&#125;</span><br><span class="line">      @media screen and (max-width:800px)&#123;.comments&#123;margin:auto;padding:10px;background:#fff&#125;&#125;</span><br><span class="line">    &lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">    &lt;%- partial('post/</span>valine<span class="string">', &#123;</span></span><br><span class="line"><span class="string">      key: post.slug,</span></span><br><span class="line"><span class="string">      title: post.title,</span></span><br><span class="line"><span class="string">      url: config.url+url_for(post.path)</span></span><br><span class="line"><span class="string">      &#125;) %&gt;</span></span><br><span class="line"><span class="string">  &lt;/section&gt;</span></span><br><span class="line"><span class="string">&lt;% &#125; %&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="layout-partial-post-valine-ejs"><a href="#layout-partial-post-valine-ejs" class="headerlink" title="layout/_partial/post/valine.ejs"></a>layout/_partial/post/valine.ejs</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"vcomment"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"comment"</span>&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;script src="/</span><span class="regexp">/cdn.jsdelivr.net/</span>npm/jquery/dist/jquery.min.js<span class="string">"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">&lt;script src="</span><span class="comment">//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"&gt;&lt;/script&gt;</span></span><br><span class="line">&lt;script src=<span class="string">'//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">   var notify = '&lt;%= theme.valine.notify %&gt;' == true ? true : false;</span></span><br><span class="line"><span class="regexp">   var verify = '&lt;%= theme.valine.verify %&gt;' == true ? true : false;</span></span><br><span class="line"><span class="regexp">   new Valine(&#123;</span></span><br><span class="line"><span class="regexp">            av: AV,</span></span><br><span class="line"><span class="regexp">            el: '#vcomment',</span></span><br><span class="line"><span class="regexp">            notify: notify,</span></span><br><span class="line"><span class="regexp">            verify: verify,</span></span><br><span class="line"><span class="regexp">            app_id: "&lt;%= theme.valine.appid %&gt;",</span></span><br><span class="line"><span class="regexp">            app_key: "&lt;%= theme.valine.appkey %&gt;",</span></span><br><span class="line"><span class="regexp">            placeholder: "&lt;%= theme.valine.placeholder %&gt;",</span></span><br><span class="line"><span class="regexp">            avatar: "&lt;%= theme.valine.avatar %&gt;",</span></span><br><span class="line"><span class="regexp">            avatar_cdn: "&lt;%= theme.valine.avatar_cdn %&gt;",</span></span><br><span class="line"><span class="regexp">            pageSize: &lt;%= theme.valine.pageSize %&gt;</span></span><br><span class="line"><span class="regexp">    &#125;);</span></span><br><span class="line"><span class="regexp">    if(window.location.hash)&#123;</span></span><br><span class="line"><span class="regexp">          var checkExist = setInterval(function() &#123;</span></span><br><span class="line"><span class="regexp">            if (document.getElementById(window.location.hash.replace("#",""))) &#123;</span></span><br><span class="line"><span class="regexp">              location.href = window.location.hash;</span></span><br><span class="line"><span class="regexp">              clearInterval(checkExist);</span></span><br><span class="line"><span class="regexp">            &#125;</span></span><br><span class="line"><span class="regexp">          &#125;, 250);</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>有很多参数可以自定义可以自己慢慢琢磨<a href="https://valine.js.org/configuration" target="_blank" rel="noopener">https://valine.js.org/configuration</a></p>
+<p>基本上就这样了</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://github.com/litten/hexo-theme-yilia/pull/646" target="_blank" rel="noopener">Hexo配置</a></p>
+<p><a href="https://giserdaishaoqing.github.io/2017/11/24/hexo博客评论新神器——Valine/" target="_blank" rel="noopener">hexo博客评论新神器——Valine/</a></p>
+<p><a href="https://notes.wanghao.work/2015-10-21-为NexT主题添加文章阅读量统计功能.html#配置LeanCloud" target="_blank" rel="noopener">Valine官方文档</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝奶茶<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zfb.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wx.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/03/Xscript%E7%9A%84%E5%90%84%E7%A7%8D/" class="archive-article-date">
-  	<time datetime="2020-04-03T13:13:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/03/Xscript%E7%9A%84%E5%90%84%E7%A7%8D/">Xscript的各种</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">技术栈</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">lua</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Xscript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/20/%E5%AD%A6-%E4%B9%A0-%E5%BC%BA-%E5%9B%BD%E8%84%9A%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2020-03-20T11:09:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/20/%E5%AD%A6-%E4%B9%A0-%E5%BC%BA-%E5%9B%BD%E8%84%9A%E6%9C%AC/">学#习#强#国脚本</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">技术栈</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Lua</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-03-01T13:04:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">技术栈</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
         		</li>
@@ -426,19 +372,166 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/24/Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/04/03/Xscript%E7%9A%84%E5%90%84%E7%A7%8D/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Xscript的各种</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Valine"><span class="toc-number">2.</span> <span class="toc-text">Valine</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#LeanCloud"><span class="toc-number">2.1.</span> <span class="toc-text">LeanCloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo配置"><span class="toc-number">2.2.</span> <span class="toc-text">Hexo配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#config-yml"><span class="toc-number">2.2.1.</span> <span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#layout-partial-artce-ejs"><span class="toc-number">2.2.2.</span> <span class="toc-text">layout&#x2F;_partial&#x2F;artce.ejs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#layout-partial-post-valine-ejs"><span class="toc-number">2.2.3.</span> <span class="toc-text">layout&#x2F;_partial&#x2F;post&#x2F;valine.ejs</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">3.</span> <span class="toc-text">参考文献</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
+<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+   new Valine({
+            av: AV,
+            el: '#vcomment',
+            notify: notify,
+            verify: verify,
+            app_id: "H0zFwFSQRMcj1WmsaKEUwKIJ-gzGzoHsz",
+            app_key: "4D2UONcYm0gGDmifpp3efTtf",
+            placeholder: "看这里，这是评论留言框！！！qwq 记得填上面的昵称和邮箱！！！",
+            avatar: "",
+            avatar_cdn: "",
+						pageSize: 15
+    });
+    if(window.location.hash){
+          var checkExist = setInterval(function() {
+            if (document.getElementById(window.location.hash.replace("#",""))) {
+              location.href = window.location.hash;
+              clearInterval(checkExist);
+            }
+          }, 250);
+        }
+</script>
+
+
+    </section>
   
 
-    
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+
+
 
 
           </div>
@@ -489,9 +582,9 @@ setInterval("createtime()",250);
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
